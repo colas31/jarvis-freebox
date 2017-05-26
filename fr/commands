@@ -1,0 +1,16 @@
+*CONTROLE*(FREE BOX)*|*FREEBOX*==say "Contrôle de la Freebox démarré"
+>MET*LA (*)==changeChaine (1); return
+>MET (*)==changeChaineFromName (1); return
+>ENCORE*==jv_repeat_last_command; return
+>TERMINE*==say "Contrôle de la Freebox terminé"
+*ALLUM*TELE|*TV*==callFreeboxUrl 'power' && callFreeboxUrl 'ok' && freebox&
+*ETEIN*TELE|*TV*==callFreeboxUrl 'power'
+
+CHANGE* DE CHAINE*==say "Quelle chaine veux tu voir ?"
+>LA (*)==changeChaine (1); return
+>TF1|TFR|TF un==changeChaine 2; return
+>MET* (*)==changeChaineFromName (1); return
+>ZAP*|VOIR* JUSQU* (*)==say "Ok je zappe" && zappingWrapper (1); return
+>STOP*|ARRET*|PAUSE*==stopzapping; return
+>MERCI|FIN|TERMINE*==say "Ok, bon visionnage"
+

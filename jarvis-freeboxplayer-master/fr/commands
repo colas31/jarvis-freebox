@@ -1,0 +1,68 @@
+*ALLUM*TELE*==say "La télé va s'allumer" && jv_curl "${freeboxplayer_url}power" && sleep 12 && jv_curl "${freeboxplayer_url}home" && jv_curl "${freeboxplayer_url}ok"
+*ETEIN*TELE*==say "La télé va s'éteindre" && jv_curl "${freeboxplayer_url}power"
+*AUGMENT*SON|*MONT*SON*==for i in seq 1 10; do jv_curl "${freeboxplayer_url}vol_inc"; done
+*BAISS*SON*==for i in seq 1 10; do jv_curl "${freeboxplayer_url}vol_dec"; done
+*COUPE*SON*|*MUTE*|*REMET*SON*==jv_curl "${freeboxplayer_url}mute"
+*TELE*HAUT*==jv_curl "${freeboxplayer_url}up"
+*TELE*BAS*==jv_curl "${freeboxplayer_url}down"
+*TELE*GAUCHE*==jv_curl "${freeboxplayer_url}left"
+*TELE*DROITE*==jv_curl "${freeboxplayer_url}right"
+*TELE*OK*|TELE*HOCKEY*|OKAY*==say "OK" && jv_curl "${freeboxplayer_url}ok"
+*TELE*RETOUR*==say "Retour" && jv_curl "${freeboxplayer_url}back"
+*TELE*HOME*|*RETOUR*ACCUEIL==say "Retour à l'accueil" && jv_curl "${freeboxplayer_url}home" && jv_curl "${freeboxplayer_url}home"
+
+*ENREGISTRE*==say "Engistrement lancé" && jv_curl "${freeboxplayer_url}rec"
+*PLAY|*PAUSE|*POSE|*LECTURE==jv_curl "${freeboxplayer_url}play"
+*RETOUR*==jv_curl "${freeboxplayer_url}red"
+*MENU==jv_curl "${freeboxplayer_url}green"
+*INFO==jv_curl "${freeboxplayer_url}yellow"
+*RECHERCHE==jv_curl "${freeboxplayer_url}blue"
+
+*ZAP*SEUL*==jv_curl "${freeboxplayer_url}1" && sleep 4  && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}5" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}prgm_inc" && sleep 3 && jv_curl "${freeboxplayer_url}9" && jv_curl "${freeboxplayer_url}0"
+*REVIEN*DIRECT*|*REME*DIRECT*|*RENE*DIRECT*==jv_curl "${freeboxplayer_url}green" && sleep 2 && jv_curl "${freeboxplayer_url}ok"
+*REME*EN*FRANCAIS*==jv_curl "${freeboxplayer_url}green" && sleep 1 && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && sleep 1 && jv_curl "${freeboxplayer_url}ok" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && jv_curl "${freeboxplayer_url}red" && jv_curl "${freeboxplayer_url}red"
+*VO*|*ANGLAIS*==jv_curl "${freeboxplayer_url}green" && sleep 1 && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && sleep 1 && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}down" && jv_curl "${freeboxplayer_url}ok" && jv_curl "${freeboxplayer_url}red" && jv_curl "${freeboxplayer_url}red"
+*REMET*TELE|*RETOUR*TELE|*REVIEN*TELE==jv_curl "${freeboxplayer_url}home" && sleep 3 && jv_curl "${freeboxplayer_url}home" && jv_curl "${freeboxplayer_url}ok"
+*CHANG==jv_curl "${freeboxplayer_url}prgm_inc"
+*REVIEN==jv_curl "${freeboxplayer_url}prgm_dec"
+
+*AFFICH*MOZAIQUE==say "Mozaïque" && jv_curl "${freeboxplayer_url}0"
+*AFFICH*TF1*|*MET*LA*UN*==say "TF1" && jv_curl "${freeboxplayer_url}1">/dev/null
+*AFFICH*FRANCE 2*|*MET*LA*2*==say "France 2" && jv_curl "${freeboxplayer_url}2">/dev/null
+*AFFICH*FRANCE 3*|*MET*LA*3*==say "France 3" && jv_curl "${freeboxplayer_url}3">/dev/null
+*AFFICH*FRANCE 4*|*MET*LA*14*==say "France 4" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}4"
+*AFFICH*CANAL==say "Canal plus" && jv_curl "${freeboxplayer_url}4"
+*AFFICH*FRANCE 5*|*MET*LA*5*==say "France 5" && jv_curl "${freeboxplayer_url}5">/dev/null
+*AFFICH*M6*|*MET*LA*6*==say "M 6" && jv_curl "${freeboxplayer_url}6">/dev/null
+*AFFICH*ARTE|*MET*LA*SEPT*==say "ARTER" && jv_curl "${freeboxplayer_url}7">/dev/null
+*AFFICH*C8*|*MET*LA*8*==say "C 8" && jv_curl "${freeboxplayer_url}8">/dev/null
+*AFFICH*W9*|*MET*LA*9*==say "W 9" && jv_curl "${freeboxplayer_url}9">/dev/null
+*AFFICH*TMC|*MET*LA*10*==say "T M C" && jv_curl "${freeboxplayer_url}10">/dev/null
+*AFFICH*NT1|*AFFICH*NT*A|*MET*LA*11*==say "N T 1" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}1">/dev/null
+*AFFICH*NRJ12*|*AFFICH*NRJ*DOUZ*==say "N R J 12" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}2">/dev/null
+*AFFICH*LCP*==say "LCP" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}3">/dev/null
+*AFFICH*BFM==say "B F M" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}5">/dev/null
+*AFFICH*ITELE==say "I Télé" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}6">/dev/null
+*AFFICH*CSTAR==say "C STAR" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}7">/dev/null
+*AFFICH*GULLI*==say "GULLI" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}8">/dev/null
+*AFFICH*FRANC*O*|AFFICH*FRANCE*O*==say "FRANCE O" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}9">/dev/null
+*AFFICH*HD1*|AFFICH*HD 1*==say "H D 1" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}0">/dev/null
+*AFFICH*EQUIPE*==say "L'équipe" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}1">/dev/null
+*AFFICH*SIX*TER*|*AFFICH*SISTER*==say "6 TER" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}2">/dev/null
+*AFFICH*NUMERO*23*==say "NUMERO 23" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}3">/dev/null
+*AFFICH*RMC*DECOUVERT*==say "RMC DECOUVERTE" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}4">/dev/null
+*AFFICH*CHERI*25*|*AFFICH*CHERI*VINGT*CINQ*==say "CHERIE 25" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}5">/dev/null
+*AFFICH*LCI*==say "LCI" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}6">/dev/null
+*AFFICH*FRANCE INFO==say "France info" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}7"
+*AFFICH*PARIS PREMIER*==say "Paris première" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}8"
+*AFFICH*RTL9*==say "RTL9" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}9">/dev/null
+*AFFICH*GAME*==say "GAME ONE" && jv_curl "${freeboxplayer_url}3" && jv_curl "${freeboxplayer_url}7">/dev/null
+*AFFICH*TEVA==say "TEVA" && jv_curl "${freeboxplayer_url}3" && jv_curl "${freeboxplayer_url}8"
+*AFFICH*AB1==say "AB1" && jv_curl "${freeboxplayer_url}3" && jv_curl "${freeboxplayer_url}9"
+*AFFICH*COMEDIE*==say "COMEDIE+" && jv_curl "${freeboxplayer_url}8" && jv_curl "${freeboxplayer_url}0">/dev/null
+*AFFICH*PLANE*==say "PLANETE+" && jv_curl "${freeboxplayer_url}5" && jv_curl "${freeboxplayer_url}9">/dev/null
+*AFFICH*FIF*|*AFFICH*SISS*|AFFICH*SYFY==say "Syfy" && jv_curl "${freeboxplayer_url}8" && jv_curl "${freeboxplayer_url}2">/dev/null
+*AFFICH*MANGA*==say "MANGAS" && jv_curl "${freeboxplayer_url}9" && jv_curl "${freeboxplayer_url}0">/dev/null
+*AFFICH*NO LIFE==say "No life" && jv_curl "${freeboxplayer_url}9" && jv_curl "${freeboxplayer_url}3"
+*AFFICH*TOONAMI==say "Tounami" && jv_curl "${freeboxplayer_url}1" && jv_curl "${freeboxplayer_url}5" && jv_curl "${freeboxplayer_url}4"
+*AFFICH*LUCKY JACK==say "Lucky jack" && jv_curl "${freeboxplayer_url}2" && jv_curl "${freeboxplayer_url}4" && jv_curl "${freeboxplayer_url}4"
